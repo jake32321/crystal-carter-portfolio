@@ -237,12 +237,13 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .about .where { color: var(--muted); font-size: 15px; }
 .portrait { position: relative; width: min(100%, 320px); margin: 40px 0 0 0; }
 .portrait::before {
-  content: ""; position: absolute; inset: 0; transform: translate(16px, 16px);
-  border: 1.5px solid var(--accent); border-radius: 160px 160px 18px 18px;
+  content: ""; position: absolute; inset: 0; transform: translate(18px, 18px) rotate(3deg);
+  background: var(--accent); border-radius: 24px;
 }
 .portrait img {
-  position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; height: auto;
-  object-fit: cover; object-position: center 30%; border-radius: 160px 160px 18px 18px;
+  position: relative; display: block; width: 100%; aspect-ratio: 1 / 1; height: auto;
+  object-fit: cover; border-radius: 24px; transform: rotate(-2deg);
+  box-shadow: 0 18px 40px -20px rgba(26, 23, 20, .45);
 }
 @media (max-width: 860px) {
   .about { grid-template-columns: 1fr; gap: 24px; align-items: start; }
