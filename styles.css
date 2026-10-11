@@ -4,8 +4,8 @@
   --ink: #1a1714;
   --muted: #6b635a;
   --line: #d9d0c2;
-  --accent: #4f6b3a;
-  --accent-soft: #e2e6d2;
+  --accent: #2e5b3c;
+  --accent-soft: #dce8de;
   --on-accent: #ffffff;
   --dark: #1a1714;
   --dark-ink: #f4efe6;
@@ -18,8 +18,8 @@
     --ink: #f1ebe1;
     --muted: #a69c90;
     --line: #3a332b;
-    --accent: #a8bc84;
-    --accent-soft: #262e1e;
+    --accent: #8dc09c;
+    --accent-soft: #1c2b21;
     --on-accent: #16130f;
     --dark: #0e0c0a;
     --dark-ink: #f1ebe1;
@@ -259,18 +259,18 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .contact p { max-width: 560px; font-size: 19px; color: #cfc6b9; margin: 0 0 40px; }
 .contact .mail {
   display: inline-block; font-family: "Instrument Serif", Georgia, serif; font-size: clamp(28px, 5vw, 56px);
-  text-decoration: none; border-bottom: 2px solid #a8bc84; padding-bottom: 4px; transition: color .2s; word-break: break-all;
+  text-decoration: none; border-bottom: 2px solid #8dc09c; padding-bottom: 4px; transition: color .2s; word-break: break-all;
 }
 /* Light sage keeps the accent readable on the dark contact block in light mode */
-.contact em { color: #a8bc84; }
-.contact .label::before { background: #a8bc84; }
-.contact .mail:hover { color: #a8bc84; }
+.contact em { color: #8dc09c; }
+.contact .label::before { background: #8dc09c; }
+.contact .mail:hover { color: #8dc09c; }
 .contact-foot {
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 104px; padding-top: 28px;
   border-top: 1px solid #3a332b; font-size: 14px; color: #a69c90;
 }
 .contact-foot a { text-decoration: none; color: var(--dark-ink); }
-.contact-foot a:hover { color: #a8bc84; }
+.contact-foot a:hover { color: #8dc09c; }
 
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in { opacity: 1; transform: none; }
