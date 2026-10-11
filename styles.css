@@ -336,3 +336,12 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 
 /* 404 page */
 .not-found { min-height: calc(100vh - 73px); display: flex; align-items: center; border-bottom: 0; }
+/* Resume links */
+.links a.nav-cta { padding: 6px 14px; margin: -6px 0; border: 1.5px solid var(--ink); border-radius: 999px; }
+.links a.nav-cta::after { display: none; }
+.links a.nav-cta:hover { background: var(--ink); color: var(--bg); }
+.contact-actions { margin-top: 36px; }
+.btn-resume { background: #8dc09c; color: #16130f; }
+.btn-resume:hover { background: #f4efe6; }
+.foot-links { display: flex; gap: 24px; }
+@media (max-width: 760px) { .links { display: flex; gap: 0; } .links a:not(.nav-cta) { display: none; } }
