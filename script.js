@@ -17,7 +17,7 @@ if (lightbox && typeof lightbox.showModal === 'function') {
 
   const showSlide = (n) => {
     slide = (n - 1 + deck.count) % deck.count + 1;
-    big.src = deck.prefix + String(slide).padStart(2, '0') + '.jpg';
+    big.src = deck.prefix + String(slide).padStart(2, '0') + '.webp';
     big.alt = `${deck.name}, slide ${slide} of ${deck.count}`;
     count.textContent = `${slide} / ${deck.count}`;
   };

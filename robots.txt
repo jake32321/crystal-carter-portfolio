@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://crystal-carter-portfolio.netlify.app/sitemap.xml

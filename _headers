@@ -1,0 +1,13 @@
+# Netlify response headers
+# Pages, CSS and JS revalidate on every visit so updates show up immediately;
+# fonts never change and images rarely do, so browsers can keep them.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=2592000

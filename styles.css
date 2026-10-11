@@ -1,3 +1,7 @@
+/* Self-hosted fonts (latin subset) */
+@font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/instrument-serif-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; font-display: swap; src: url("fonts/instrument-serif-italic-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "DM Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("fonts/dm-sans-latin.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 :root {
   --bg: #f4efe6;
   --paper: #fbf8f2;
@@ -322,3 +326,13 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
   html { scroll-behavior: auto; }
 }
 .section-first { padding-top: 64px; }
+
+/* Skip link: hidden until focused with the keyboard */
+.skip-link {
+  position: absolute; left: 16px; top: -60px; z-index: 100; padding: 10px 16px; border-radius: 8px;
+  background: var(--ink); color: var(--bg); text-decoration: none; font-weight: 500; transition: top .2s ease;
+}
+.skip-link:focus { top: 12px; }
+
+/* 404 page */
+.not-found { min-height: calc(100vh - 73px); display: flex; align-items: center; border-bottom: 0; }
