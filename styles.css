@@ -4,8 +4,9 @@
   --ink: #1a1714;
   --muted: #6b635a;
   --line: #d9d0c2;
-  --accent: #d4572a;
-  --accent-soft: #f6dccf;
+  --accent: #4f6b3a;
+  --accent-soft: #e2e6d2;
+  --on-accent: #ffffff;
   --dark: #1a1714;
   --dark-ink: #f4efe6;
   --max: 1160px;
@@ -17,8 +18,9 @@
     --ink: #f1ebe1;
     --muted: #a69c90;
     --line: #3a332b;
-    --accent: #f07a4c;
-    --accent-soft: #3a2219;
+    --accent: #a8bc84;
+    --accent-soft: #262e1e;
+    --on-accent: #16130f;
     --dark: #0e0c0a;
     --dark-ink: #f1ebe1;
   }
@@ -71,12 +73,12 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 }
 .btn:hover { transform: translateY(-2px); }
 .btn-solid { background: var(--ink); color: var(--bg); }
-.btn-solid:hover { background: var(--accent); color: #fff; }
+.btn-solid:hover { background: var(--accent); color: var(--on-accent); }
 .btn-line { border: 1.5px solid var(--ink); }
 .btn-line:hover { background: var(--ink); color: var(--bg); }
 
 /* Marquee */
-.marquee { overflow: hidden; border-bottom: 1px solid var(--line); background: var(--accent); color: #fff; }
+.marquee { overflow: hidden; border-bottom: 1px solid var(--line); background: var(--accent); color: var(--on-accent); }
 .marquee-track { display: flex; width: max-content; animation: scroll 38s linear infinite; }
 .marquee span { font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-size: 30px; padding: 14px 0; white-space: nowrap; }
 .marquee span::after { content: "✦"; font-style: normal; font-size: 18px; margin: 0 28px; vertical-align: middle; }
@@ -163,7 +165,7 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
   display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; border: 1.5px solid var(--ink);
   border-radius: 999px; text-decoration: none; font-weight: 500; font-size: 15px; transition: background .2s, color .2s;
 }
-.jump a span { font-size: 12px; font-weight: 700; background: var(--accent); color: #fff; border-radius: 999px; padding: 1px 8px; }
+.jump a span { font-size: 12px; font-weight: 700; background: var(--accent); color: var(--on-accent); border-radius: 999px; padding: 1px 8px; }
 .jump a:hover { background: var(--ink); color: var(--bg); }
 
 /* Social */
@@ -201,7 +203,7 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .lightbox img { display: block; max-width: 100%; max-height: 88vh; width: auto; height: auto; border-radius: 12px; margin: 0 auto; }
 .lightbox-close {
   position: absolute; top: -18px; right: -18px; width: 40px; height: 40px; border-radius: 50%; border: 0;
-  background: var(--accent); color: #fff; font-size: 24px; line-height: 1; cursor: pointer;
+  background: var(--accent); color: var(--on-accent); font-size: 24px; line-height: 1; cursor: pointer;
 }
 @media (max-width: 600px) { .lightbox-close { top: -48px; right: 0; } }
 
@@ -257,15 +259,18 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .contact p { max-width: 560px; font-size: 19px; color: #cfc6b9; margin: 0 0 40px; }
 .contact .mail {
   display: inline-block; font-family: "Instrument Serif", Georgia, serif; font-size: clamp(28px, 5vw, 56px);
-  text-decoration: none; border-bottom: 2px solid #f07a4c; padding-bottom: 4px; transition: color .2s; word-break: break-all;
+  text-decoration: none; border-bottom: 2px solid #a8bc84; padding-bottom: 4px; transition: color .2s; word-break: break-all;
 }
-.contact .mail:hover { color: #f07a4c; }
+/* Light sage keeps the accent readable on the dark contact block in light mode */
+.contact em { color: #a8bc84; }
+.contact .label::before { background: #a8bc84; }
+.contact .mail:hover { color: #a8bc84; }
 .contact-foot {
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 104px; padding-top: 28px;
   border-top: 1px solid #3a332b; font-size: 14px; color: #a69c90;
 }
 .contact-foot a { text-decoration: none; color: var(--dark-ink); }
-.contact-foot a:hover { color: #f07a4c; }
+.contact-foot a:hover { color: #a8bc84; }
 
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.in { opacity: 1; transform: none; }
