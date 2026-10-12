@@ -299,6 +299,8 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .contact em { color: #8dc09c; }
 .contact .label::before { background: #8dc09c; }
 .contact .mail:hover { color: #8dc09c; }
+.contact .phone { display: block; width: fit-content; margin-top: 18px; font-family: "Instrument Serif", Georgia, serif; font-size: clamp(24px, 3.4vw, 36px); text-decoration: none; transition: color .2s; }
+.contact .phone:hover { color: #8dc09c; }
 .contact-foot {
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-top: 104px; padding-top: 28px;
   border-top: 1px solid #3a332b; font-size: 14px; color: #a69c90;
