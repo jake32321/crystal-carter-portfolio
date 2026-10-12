@@ -88,18 +88,6 @@ nav .wrap { display: flex; align-items: center; justify-content: space-between; 
 .marquee span::after { content: "✦"; font-style: normal; font-size: 18px; margin: 0 28px; vertical-align: middle; }
 @keyframes scroll { to { transform: translateX(-50%); } }
 
-/* Stats */
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); }
-.stat { padding: 8px 28px; border-left: 1px solid var(--line); }
-.stat:first-child { border-left: 0; padding-left: 0; }
-.stat b { display: block; font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: clamp(56px, 7vw, 88px); line-height: 1; }
-.stat b sup { font-size: .45em; color: var(--accent); vertical-align: top; position: relative; top: .2em; }
-.stat span { display: block; color: var(--muted); font-size: 15px; margin-top: 10px; max-width: 220px; }
-@media (max-width: 860px) {
-  .stats { grid-template-columns: repeat(2, 1fr); row-gap: 40px; }
-  .stat:nth-child(3) { border-left: 0; padding-left: 0; }
-}
-
 /* Intro / services */
 .intro { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
 .intro p.big { font-family: "Instrument Serif", Georgia, serif; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.2; margin: 0; }
